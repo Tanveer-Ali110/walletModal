@@ -1,0 +1,33 @@
+.modal-backdrop {
+  background-color: #34063d !important ;
+}
+.modal-dialog {
+  margin: auto !important;
+}
+.modal-content {
+  background-color: #051a7c !important;
+  border-radius: 30px !important;
+  border: 5px groove #ccca0533 !important;
+  width: auto !important;
+  padding: 20px 20px;
+  margin: auto;
+  color: #ffff;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: none !important;
+  }
+  .modal-dialog-centered {
+    min-height: calc(100% - 3.5rem) !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .modal-dialog {
+    max-width: 300px !important;
+  }
+  .modal-dialog-centered {
+    min-height: calc(100% - 3.5rem);
+  }
+}
