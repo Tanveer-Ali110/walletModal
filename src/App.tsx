@@ -1,4 +1,3 @@
-import './App.css';
 import Authenticate from './component/Authenticate';
 
 function App() {

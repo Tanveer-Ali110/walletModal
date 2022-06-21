@@ -1,4 +1,6 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { Button as MUbutton } from "@material-ui/core";
+import { blue } from "@material-ui/core/colors";
+import { makeStyles, withStyles } from "@material-ui/core/styles";
 
 export const useConnectModalStyle = makeStyles((theme) => ({
   root: {
@@ -70,3 +72,14 @@ export const useLogOutModal = makeStyles((theme) => ({
     gap: "10px",
   },
 }));
+
+export const Button = withStyles((theme) => ({
+  root: {
+    color: theme.palette.getContrastText(blue[900]),
+    backgroundColor: blue[900],
+    '&:hover': {
+      backgroundColor: blue[700],
+    },
+    padding:"10px"
+  },
+}))(MUbutton);

@@ -1,6 +1,9 @@
 import Modal from '../Modal'
-import { useLogOutModal } from './styles';
+import { Button, useLogOutModal } from './styles';
 import CloseIcon from '@material-ui/icons/Close';
+import CopyToClipboard from 'component/copytoClipboard';
+
+// import Button from '@material-ui/core/Button';
 
 interface props {
     isOpen?: boolean,
@@ -17,8 +20,10 @@ const LogOutModal: React.FC<props> = ({ isOpen = false, onDismiss = () => null }
                     <CloseIcon className={classes.pointer} onClick={onDismiss} />
                 </div>
                 <div className={classes.body}>
-                    <div>0x087ce64E61Db50dAa417b769B5efD22f12511FfC</div>
-                    <button type='button'>Logout</button>
+                    <CopyToClipboard toCopy="0x087ce64E61Db50dAa417b769B5efD22f12511FfC">
+                        0x087ce64E61Db50dAa417b769B5efD22f12511FfC
+                    </CopyToClipboard>
+                    <Button onClick={() => onDismiss()}>Logout</Button>
                 </div>
             </div>
         </Modal>
