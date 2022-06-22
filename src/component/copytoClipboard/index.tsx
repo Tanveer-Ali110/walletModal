@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { OverlayTrigger, Tooltip } from 'react-bootstrap'
 import Button from '@material-ui/core/Button';
 
-import CopyIcon from "../Svg/Copy"
+import CopyIcon from "../svg/Copy"
 
 interface Props {
     toCopy: string
@@ -28,7 +28,7 @@ const CopyToClipboard: React.FC<Props> = ({ toCopy, children, ...props }) => {
                 {...props}
             >
                 {children}
-                <CopyIcon style={{ fontSize: "20px", color: "#f3841d", marginLeft: '5px' }} />
+                <CopyIcon style={{ fontSize: "20px", color: "#3f51b5", marginLeft: '5px' }} />
             </Button>
         </OverlayTrigger>
     )

@@ -23,7 +23,7 @@ export const useConnectModalStyle = makeStyles((theme) => ({
   walletWrapper: {
     display: "flex",
     flexWrap: "wrap",
-    gap: 5,
+    gap: "25px 0px",
     justifyContent: "space-around",
     alignContent: "space-between",
     paddingBlock: 20,
@@ -57,14 +57,11 @@ export const useLogOutModal = makeStyles((theme) => ({
     justifyContent: "space-between",
     alignItems: "center",
   },
-  heading: {
-    fontSize: 25,
-  },
   pointer: {
     cursor: "pointer",
   },
   body: {
-    marginTop: "15px",
+    marginTop: "10px",
     textAlign: "center",
     display: "flex",
     flexDirection: "column",
@@ -77,9 +74,9 @@ export const Button = withStyles((theme) => ({
   root: {
     color: theme.palette.getContrastText(blue[900]),
     backgroundColor: blue[900],
-    '&:hover': {
+    padding: "5px 10px",
+    "&:hover": {
       backgroundColor: blue[700],
     },
-    padding:"10px"
   },
 }))(MUbutton);
